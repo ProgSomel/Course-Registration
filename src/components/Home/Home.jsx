@@ -8,7 +8,7 @@ const Home = () => {
 
   const [totalCredit, setTotalCredit] = useState(0);
 
-  const [remainingCredit, setRemainingCredit] = useState(0);
+  const [remainingCredit, setRemainingCredit] = useState(20);
 
 
   useEffect(() => {
@@ -30,18 +30,24 @@ const Home = () => {
         selectedCourse.forEach((item) => {
             count += item.credit;
         })
+
         const newRemainigCredit = 20 - count;
-        setRemainingCredit(newRemainigCredit);
+            
+        
+        
         
 
         if(count > 20 ) {
-            return alert("Credit limit exceeded");
+                return alert("Credit limit exceeded");       
         }
-        else if (remainingCredit<0) {
-            return alert("Remaining credit limit exceeded");
+        else if(newRemainigCredit < 0) {
+            return alert("No more credit available");
         }
+        
         else {
+            
             setTotalCredit(count);
+            setRemainingCredit(newRemainigCredit);
             setSelectedCourse([...selectedCourse, course]);
         }
 

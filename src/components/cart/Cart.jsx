@@ -12,7 +12,7 @@ const Cart = ({selectedCourse, totalCredit, remainingCredit}) => {
 
             {
                 selectedCourse.map((course => (
-                    <li className=' list-decimal'>{course.title}</li>
+                    <li className=' list-decimal list-inside font-extralight '>{course.title}</li>
                 )))
             }
 
