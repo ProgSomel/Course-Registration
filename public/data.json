@@ -1,66 +1,66 @@
 [
     {
-      "cover_image": "course1.jpg",
-      "title": "Introduction to Programming",
-      "description": "In this comprehensive course, you will learn the basics of programming and coding. Starting from scratch, you'll grasp essential concepts, work with popular programming languages, and build simple applications. Whether you're a complete beginner or looking to refresh your coding skills, this course is perfect for you.",
-      "price": 99,
-      "credit": 3
+      "cover_image": "https://i.ibb.co/0Xz8DJK/c.png",
+      "title": "Introduction to C Programming",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "price": 15000,
+      "credit": 1
     },
     {
-      "cover_image": "course2.jpg",
-      "title": "Data Structures and Algorithms",
-      "description": "Explore the world of data structures and algorithms in this in-depth course. You'll dive deep into data structures like arrays, linked lists, and trees, and learn algorithms for searching, sorting, and optimizing code. Gain the problem-solving skills needed for technical interviews and advanced software development.",
-      "price": 149,
-      "credit": 4
+      "cover_image": "https://i.ibb.co/txYnCJQ/algo.png",
+      "title": "Introduction to Algorithms",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "price": 25000,
+      "credit": 2
     },
     {
-      "cover_image": "course3.jpg",
-      "title": "Web Development Essentials",
-      "description": "Discover the art of web development in this hands-on course. From HTML and CSS to JavaScript and backend technologies, you'll acquire the skills to create stunning websites and interactive web applications. Get ready to unleash your creativity and embark on a rewarding journey into web development.",
-      "price": 119,
-      "credit": 3
+      "cover_image": "https://i.ibb.co/Z6KWxZ0/c.png",
+      "title": "Introduction to C++ for DSA",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "price": 10000,
+      "credit": 10
     },
     {
-      "cover_image": "course4.jpg",
-      "title": "Machine Learning Fundamentals",
-      "description": "Dive into the exciting field of machine learning and build predictive models. Understand the mathematics and algorithms behind machine learning, work with real-world datasets, and master frameworks like TensorFlow and PyTorch. Whether you're interested in AI research or practical applications, this course has you covered.",
-      "price": 199,
-      "credit": 4
+      "cover_image": "https://i.ibb.co/6ggxkMd/data.png",
+      "title": "Basic Data Structures",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "price": 35000,
+      "credit": 5
     },
     {
-      "cover_image": "course5.jpg",
-      "title": "Database Design and Management",
-      "description": "Unlock the secrets of effective database design and management. Learn how to design normalized databases, optimize SQL queries, and ensure data integrity. Whether you're a developer, data analyst, or database administrator, this course will enhance your data-handling skills.",
-      "price": 129,
-      "credit": 3
+      "cover_image": "https://i.ibb.co/0fRRgJ7/py.png",
+      "title": "Introduction to OOP Python",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "price": 19000,
+      "credit": 5
     },
     {
-      "cover_image": "course6.jpg",
-      "title": "Cybersecurity Fundamentals",
-      "description": "Explore the essential concepts of cybersecurity and protect digital assets. Understand the anatomy of cyberattacks, implement security measures, and learn ethical hacking techniques to defend against threats. As cyber threats continue to evolve, equip yourself with the knowledge to safeguard information and networks.",
-      "price": 149,
-      "credit": 4
+      "cover_image": "https://i.ibb.co/LQvyTkr/software.png",
+      "title": "Software Engineering",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "price": 23000,
+      "credit": 2
     },
     {
-      "cover_image": "course7.jpg",
-      "title": "Software Engineering Principles",
-      "description": "Master the principles of software engineering for robust and scalable software development. Learn about software architecture, design patterns, and agile methodologies. Acquire the skills to lead software development projects and create high-quality, maintainable code.",
-      "price": 169,
-      "credit": 4
+      "cover_image": "https://i.ibb.co/xhjcS21/aws.png",
+      "title": "AWS, Cloud Computing",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "price": 35000,
+      "credit": 5
     },
     {
-      "cover_image": "course8.jpg",
-      "title": "Mobile App Development",
-      "description": "Create mobile applications for iOS and Android platforms. Develop user-friendly interfaces, work with native and cross-platform frameworks, and understand the app deployment process. Whether you dream of building the next big app or want to enhance your mobile development skills, this course is your gateway.",
-      "price": 139,
-      "credit": 3
+      "cover_image": "https://i.ibb.co/ZhfqxCp/sql.png",
+      "title": "Database (MySQL)",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "price": 19000,
+      "credit": 5
     },
     {
-      "cover_image": "course9.jpg",
-      "title": "Cloud Computing Essentials",
-      "description": "Learn about cloud technologies and how to deploy applications in the cloud. Explore popular cloud platforms like AWS, Azure, and Google Cloud. Understand cloud architecture, security, and scalability. Equip yourself with the skills to harness the power of the cloud for modern applications.",
-      "price": 159,
-      "credit": 4
+      "cover_image": "https://i.ibb.co/6ghvFsw/problem.png",
+      "title": "Problem-Solving Part",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "price": 23000,
+      "credit": 2
     }
   ]
   
