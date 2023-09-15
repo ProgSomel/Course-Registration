@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Cart from "../cart/Cart";
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 const Home = () => {
   const [courses, setCourses] = useState([0]);
@@ -24,7 +26,16 @@ const Home = () => {
 
     
     if(isExist) {
-        return alert("Course is already selected");
+        return toast.warn(`${course.title} is already Added`, {
+            position: "top-center",
+            autoClose: 4000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            });
     }
     else {
         selectedCourse.forEach((item) => {
@@ -38,10 +49,28 @@ const Home = () => {
         
 
         if(count > 20 ) {
-                return alert("Credit limit exceeded");       
+                return toast.error('Credit limit exceeded', {
+                    position: "top-center",
+                    autoClose: 4000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                    });      
         }
         else if(newRemainigCredit < 0) {
-            return alert("No more credit available");
+            return toast.error('No more credit to take', {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                });
         }
         
         else {
@@ -49,6 +78,7 @@ const Home = () => {
             setTotalCredit(count);
             setRemainingCredit(newRemainigCredit);
             setSelectedCourse([...selectedCourse, course]);
+            
         }
 
         
@@ -56,7 +86,7 @@ const Home = () => {
     
 
     }
-    console.log(count);
+    
   }
 
   return (
@@ -127,6 +157,8 @@ const Home = () => {
       {/* Cart  */}
         <div >
       <Cart selectedCourse={selectedCourse} totalCredit={totalCredit} remainingCredit={remainingCredit}></Cart>
+
+      <ToastContainer></ToastContainer>
 
         </div>
     </div>
