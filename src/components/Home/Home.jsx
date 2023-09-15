@@ -43,13 +43,9 @@ const Home = () => {
         })
 
         const newRemainigCredit = 20 - count;
-            
-        
-        
-        
 
         if(count > 20 ) {
-                return toast.error('Credit limit exceeded', {
+                return toast.warn('Credit limit exceeded', {
                     position: "top-center",
                     autoClose: 4000,
                     hideProgressBar: false,
@@ -61,7 +57,7 @@ const Home = () => {
                     });      
         }
         else if(newRemainigCredit < 0) {
-            return toast.error('No more credit to take', {
+            return toast.warn('No more credit to take', {
                 position: "top-center",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -90,9 +86,9 @@ const Home = () => {
   }
 
   return (
-    <div className="container max-w-screen-xl px-2 md:px-4 lg:px-8 mx-auto my-8 flex  flex-col lg:flex-row gap-8">
+    <div className="container max-w-screen-2xl px-2 md:px-4 lg:px-8 mx-auto my-8 flex  flex-col lg:flex-row gap-8">
       <div className="card-container flex-1  lg:w-3/4 ">
-        <div className="card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+        <div className="card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
           {courses.map((course,idx) => (
             <div key={idx}  className=" p-2 rounded-lg bg-[#FFFFFF] shadow-lg space-y-3 ">
               <img className="w-full" src={course.cover_image} alt="" />
