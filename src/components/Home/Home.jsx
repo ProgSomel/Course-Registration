@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from "react";
+import Cart from "../cart/Cart";
 
 const Home = () => {
   const [courses, setCourses] = useState([0]);
+
+  const [selectedCourse, setSelectedCourse] = useState([]);
+
 
   useEffect(() => {
     fetch("data.json")
@@ -9,17 +13,22 @@ const Home = () => {
       .then((data) => setCourses(data));
   }, []);
 
+  const handleSelect = course => {
+    setSelectedCourse([...selectedCourse, course]);
+  }
+  console.log(selectedCourse);
+
   return (
-    <div className="container max-w-screen-xl px-2 md:px-4 lg:px-8 mx-auto my-8">
-      <div className="card-container  lg:w-3/4 ">
+    <div className="container max-w-screen-xl px-2 md:px-4 lg:px-8 mx-auto my-8 flex  flex-col lg:flex-row gap-8">
+      <div className="card-container flex-1  lg:w-3/4 ">
         <div className="card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
-          {courses.map((course) => (
-            <div className=" p-2 rounded-lg bg-[#FFFFFF] shadow-lg space-y-3 ">
+          {courses.map((course,idx) => (
+            <div key={idx}  className=" p-2 rounded-lg bg-[#FFFFFF] shadow-lg space-y-3 ">
               <img className="w-full" src={course.cover_image} alt="" />
-              <h1>{course.title}</h1>
-              <p>{course.description}</p>
+              <h1 className=" font-bold ">{course.title}</h1>
+              <p className=" font-extralight ">{course.description}</p>
               {/* pricing and credit container  */}
-              <div className="flex gap-4">
+              <div className="flex gap-4 font-extralight ">
                 {/* pricing  */}
                 <div className="flex">
                   <svg
@@ -66,7 +75,7 @@ const Home = () => {
                   Credit: {course.credit}hr
                 </div>
               </div>
-            <button className="btn bg-[#2F80ED] text-white px-3 w-full mx-auto rounded-lg">
+            <button onClick={()=>handleSelect(course)} className="btn bg-[#2F80ED] text-white px-3 w-full mx-auto rounded-lg">
                 Select
               </button>
           
@@ -74,6 +83,11 @@ const Home = () => {
           ))}
         </div>
       </div>
+      {/* Cart  */}
+        <div >
+      <Cart ></Cart>
+
+        </div>
     </div>
   );
 };
