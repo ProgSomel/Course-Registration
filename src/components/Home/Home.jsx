@@ -16,7 +16,6 @@ const Home = () => {
   const handleSelect = course => {
     setSelectedCourse([...selectedCourse, course]);
   }
-  console.log(selectedCourse);
 
   return (
     <div className="container max-w-screen-xl px-2 md:px-4 lg:px-8 mx-auto my-8 flex  flex-col lg:flex-row gap-8">
@@ -85,7 +84,7 @@ const Home = () => {
       </div>
       {/* Cart  */}
         <div >
-      <Cart ></Cart>
+      <Cart selectedCourse={selectedCourse}></Cart>
 
         </div>
     </div>
